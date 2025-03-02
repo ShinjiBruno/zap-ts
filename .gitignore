@@ -1,0 +1,16 @@
+.DS_Store
+tokens
+node_modules
+tokens
+/build
+/package
+/sql
+.env
+.env.*
+!.env.example
+.vercel
+.output
+*.log
+file.txt
+file.jpeg
+file.ogg
