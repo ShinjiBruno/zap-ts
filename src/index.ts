@@ -1,6 +1,7 @@
 import { initWpp, wppAPIs } from "./wpp";
 import { Chat } from "./chat";
 import { ChatManager } from "./chatManager";
+import { initWASocket, waSocketAPIs } from "./baileys";
 
 const chatManager = new ChatManager();
 main();
@@ -13,6 +14,6 @@ async function main(){
   // .catch();
   
   // await chatManager.monitorChats();
-  wppAPIs();
-
+  //wppAPIs();
+  waSocketAPIs();
 }
