@@ -1,6 +1,6 @@
 # Zap-TS
 
-This project allows testing the functions of the WppConnect library through API requests to custom endpoints using Express.js.
+This repo allows testing the functions of the WppConnect library through API requests to custom endpoints using Express.js.
 
 ## Features
 
@@ -29,7 +29,7 @@ This project allows testing the functions of the WppConnect library through API 
    npm install
    ```
 
-3. Create a [.env](http://_vscodecontentref_/0) file in the root of the project and add the environment variables as specified in the [.env.example](http://_vscodecontentref_/1) file:
+3. Create a [.env](https://github.com/ShinjiBruno/zap-ts/blob/main/.env.example) file in the root of the project and add the environment variables as specified in the [.env.example](https://github.com/ShinjiBruno/zap-ts/blob/main/.env.example) file:
    ```properties
    TYPEBOT_TOKEN='YOUR_TYPEBOT_TOKEN'
    TYPEBOT_PUBLICID='YOUR_TYPEBOT_PUBLIC_ID'
@@ -44,11 +44,11 @@ This project allows testing the functions of the WppConnect library through API 
    npm start
    ```
 
-2. Access the endpoints defined in the [wpp.ts](http://_vscodecontentref_/2) file to interact with the API.
+2. Access the endpoints defined in the [wpp.ts](https://github.com/ShinjiBruno/zap-ts/blob/main/src/wpp.ts) file to interact with the API.
 
 ### Endpoints
 
-The endpoints are defined in the `wppAPIs` method in the [wpp.ts](http://_vscodecontentref_/3) file. Here are some examples:
+The endpoints are defined in the `wppAPIs` method in the [wpp.ts](https://github.com/ShinjiBruno/zap-ts/blob/main/src/wpp.ts) file. Here are some examples:
 
 - **POST /connect-session**: Connects a new session.
 - **POST /connect-and-post**: Connects a new session and posts a message.
