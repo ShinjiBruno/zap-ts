@@ -1,7 +1,6 @@
 import { Ack, create, Message, SocketState, Whatsapp, Wid } from '@wppconnect-team/wppconnect';
 const wppconnect = require('@wppconnect-team/wppconnect');
 import express from 'express';
-import { testeSessions } from './test';
 import fs from 'fs';
 import path from 'path';
 import { wppClients } from './wppclients';
@@ -95,29 +94,29 @@ export async function wppAPIs (){
             res.json('error');
         }
     })
-    app.get('/all-sessions', async(req, res) => {
-        for (const _session of testeSessions) {
-            let wppclient: Whatsapp;
-            create({
-                session: _session.pushname, 
-                useChrome: false,
-                autoClose: 180000,
-                puppeteerOptions: {
-                    userDataDir: path.join(rootDir, 'tokens', _session.sessionID),
-                  },
-            })
-            .catch(()=>
-                console.log('çajfdlkçasjflasjflçsdjfskdfjasdçlkfjsdklf')
-            )
-            .then((client) => {
-                wppclient = client as Whatsapp;
-                console.log('wppclient .........',wppclient);
-                if(wppclient){
-                    wppClients.set(_session.number, wppclient) // Store wppclient in the map
-                    console.log('wppclient saved...................');
-                }
-            })
-        }
+    app.get('/test-all-sessions', async(req, res) => {
+        // for (const _session of testeSessions) {
+        //     let wppclient: Whatsapp;
+        //     create({
+        //         session: _session.pushname, 
+        //         useChrome: false,
+        //         autoClose: 180000,
+        //         puppeteerOptions: {
+        //             userDataDir: path.join(rootDir, 'tokens', _session.sessionID),
+        //           },
+        //     })
+        //     .catch(()=>
+        //         console.log('çajfdlkçasjflasjflçsdjfskdfjasdçlkfjsdklf')
+        //     )
+        //     .then((client) => {
+        //         wppclient = client as Whatsapp;
+        //         console.log('wppclient .........',wppclient);
+        //         if(wppclient){
+        //             wppClients.set(_session.number, wppclient) // Store wppclient in the map
+        //             console.log('wppclient saved...................');
+        //         }
+        //     })
+        // }
 
         console.log('saiu do loop');
     });
