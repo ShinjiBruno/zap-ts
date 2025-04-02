@@ -1,5 +1,5 @@
 {
-  "name": "whatsapp-test",
+  "name": "zapts",
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {
@@ -14,7 +14,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "start": "node src/index.ts",
+    "start": "cd front && npm start",
     "dev": "ts-node-dev --ignore-watch node_modules --respawn --transpile-only src/index.ts"
   },
   "dependencies": {
@@ -27,14 +27,16 @@
     "@types/react-dom": "^17.0.0",
     "@whiskeysockets/baileys": "^6.7.15",
     "@wppconnect-team/wppconnect": "^1.33.0",
+    "autoprefixer": "^10.4.21",
     "bootstrap": "^5.3.3",
     "express": "^4.19.2",
+    "postcss": "^8.5.3",
     "react": "^17.0.2",
     "react-bootstrap": "^2.10.9",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
-    "typescript": "^4.1.2",
+    "tailwindcss": "^4.1.1",
     "web-vitals": "^1.0.1"
   },
   "author": "",
