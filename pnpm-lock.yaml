@@ -84,6 +84,9 @@ importers:
       dotenv:
         specifier: ^16.4.7
         version: 16.4.7
+      prettier:
+        specifier: ^3.5.3
+        version: 3.5.3
       ts-node-dev:
         specifier: ^2.0.0
         version: 2.0.0(@types/node@12.20.55)(node-notifier@8.0.2)(typescript@5.8.2)
@@ -5726,6 +5729,11 @@ packages:
     resolution: {integrity: sha512-ravE6m9Atw9Z/jjttRUZ+clIXogdghyZAuWJ3qEzjT+jI/dL1ifAqhZeC5VHzQp1MSt1+jxKkFNemj/iO7tVUA==}
     engines: {node: '>=4'}
 
+  prettier@3.5.3:
+    resolution: {integrity: sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw==}
+    engines: {node: '>=14'}
+    hasBin: true
+
   pretty-bytes@5.6.0:
     resolution: {integrity: sha512-FFw039TmrBqFK8ma/7OL3sDz/VytdtJr044/QUJtH0wK9lb9jLq9tJyIxUwtQJHwar2BqtiA4iCWSwo9JLkzFg==}
     engines: {node: '>=6'}
@@ -9351,7 +9359,7 @@ snapshots:
       '@types/istanbul-lib-coverage': 2.0.6
       collect-v8-coverage: 1.0.2
 
-  '@jest/test-sequencer@26.6.3':
+  '@jest/test-sequencer@26.6.3(ts-node@10.9.2(@types/node@12.20.55)(typescript@5.8.2))':
     dependencies:
       '@jest/test-result': 26.6.2
       graceful-fs: 4.2.11
@@ -9359,7 +9367,11 @@ snapshots:
       jest-runner: 26.6.3(ts-node@10.9.2(@types/node@12.20.55)(typescript@5.8.2))
       jest-runtime: 26.6.3(ts-node@10.9.2(@types/node@12.20.55)(typescript@5.8.2))
     transitivePeerDependencies:
+      - bufferutil
+      - canvas
       - supports-color
+      - ts-node
+      - utf-8-validate
 
   '@jest/transform@26.6.2':
     dependencies:
@@ -13436,7 +13448,7 @@ snapshots:
       execa: 4.1.0
       throat: 5.0.0
 
-  jest-circus@26.6.0:
+  jest-circus@26.6.0(ts-node@10.9.2(@types/node@12.20.55)(typescript@5.8.2)):
     dependencies:
       '@babel/traverse': 7.26.10
       '@jest/environment': 26.6.2
@@ -13460,7 +13472,11 @@ snapshots:
       stack-utils: 2.0.6
       throat: 5.0.0
     transitivePeerDependencies:
+      - bufferutil
+      - canvas
       - supports-color
+      - ts-node
+      - utf-8-validate
 
   jest-cli@26.6.3(ts-node@10.9.2(@types/node@12.20.55)(typescript@5.8.2)):
     dependencies:
@@ -13487,7 +13503,7 @@ snapshots:
   jest-config@26.6.3(ts-node@10.9.2(@types/node@12.20.55)(typescript@5.8.2)):
     dependencies:
       '@babel/core': 7.12.3
-      '@jest/test-sequencer': 26.6.3
+      '@jest/test-sequencer': 26.6.3(ts-node@10.9.2(@types/node@12.20.55)(typescript@5.8.2))
       '@jest/types': 26.6.2
       babel-jest: 26.6.3(@babel/core@7.12.3)
       chalk: 4.1.2
@@ -15244,6 +15260,8 @@ snapshots:
 
   prepend-http@2.0.0: {}
 
+  prettier@3.5.3: {}
+
   pretty-bytes@5.6.0: {}
 
   pretty-error@2.1.2:
@@ -15653,7 +15671,7 @@ snapshots:
       html-webpack-plugin: 4.5.0(webpack@4.44.2)
       identity-obj-proxy: 3.0.0
       jest: 26.6.0(ts-node@10.9.2(@types/node@12.20.55)(typescript@5.8.2))
-      jest-circus: 26.6.0
+      jest-circus: 26.6.0(ts-node@10.9.2(@types/node@12.20.55)(typescript@5.8.2))
       jest-resolve: 26.6.0
       jest-watch-typeahead: 0.6.1(jest@26.6.0(ts-node@10.9.2(@types/node@12.20.55)(typescript@5.8.2)))
       mini-css-extract-plugin: 0.11.3(webpack@4.44.2)

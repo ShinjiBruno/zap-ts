@@ -1,4 +1,4 @@
-import { LeftPanel } from './LeftPanel'
+import { LeftPanel } from './NavBar'
 import { MainContent } from './MainContent'
 
 

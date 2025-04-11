@@ -1,5 +1,4 @@
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
 import { Grid} from '../../components/ui/mui';
 
 export const MainContent = () => {
